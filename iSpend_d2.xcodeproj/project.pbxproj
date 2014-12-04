@@ -14,6 +14,8 @@
 		E9215F7D1A2F76B900A3E365 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9215F7C1A2F76B900A3E365 /* Images.xcassets */; };
 		E9215F801A2F76B900A3E365 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9215F7E1A2F76B900A3E365 /* LaunchScreen.xib */; };
 		E9215F8C1A2F76B900A3E365 /* iSpend_d2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9215F8B1A2F76B900A3E365 /* iSpend_d2Tests.m */; };
+		E974A94E1A30CB7800EAA2ED /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E974A94D1A30CB7800EAA2ED /* User.m */; };
+		E974A9511A30E4DC00EAA2ED /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974A9501A30E4DC00EAA2ED /* ShowViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		E9215F851A2F76B900A3E365 /* iSpend_d2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSpend_d2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9215F8A1A2F76B900A3E365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9215F8B1A2F76B900A3E365 /* iSpend_d2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSpend_d2Tests.m; sourceTree = "<group>"; };
+		E974A94C1A30CB7800EAA2ED /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E974A94D1A30CB7800EAA2ED /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E974A94F1A30E4DC00EAA2ED /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
+		E974A9501A30E4DC00EAA2ED /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +87,10 @@
 		E9215F6E1A2F76B900A3E365 /* iSpend_d2 */ = {
 			isa = PBXGroup;
 			children = (
+				E974A94B1A30CABE00EAA2ED /* Controlers */,
+				E974A94A1A30CA9600EAA2ED /* Models */,
 				E9215F731A2F76B900A3E365 /* AppDelegate.h */,
 				E9215F741A2F76B900A3E365 /* AppDelegate.m */,
-				E9215F761A2F76B900A3E365 /* ViewController.h */,
-				E9215F771A2F76B900A3E365 /* ViewController.m */,
 				E9215F791A2F76B900A3E365 /* Main.storyboard */,
 				E9215F7C1A2F76B900A3E365 /* Images.xcassets */,
 				E9215F7E1A2F76B900A3E365 /* LaunchScreen.xib */,
@@ -117,6 +123,26 @@
 				E9215F8A1A2F76B900A3E365 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E974A94A1A30CA9600EAA2ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E974A94C1A30CB7800EAA2ED /* User.h */,
+				E974A94D1A30CB7800EAA2ED /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E974A94B1A30CABE00EAA2ED /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				E974A94F1A30E4DC00EAA2ED /* ShowViewController.h */,
+				E974A9501A30E4DC00EAA2ED /* ShowViewController.m */,
+				E9215F761A2F76B900A3E365 /* ViewController.h */,
+				E9215F771A2F76B900A3E365 /* ViewController.m */,
+			);
+			name = Controlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E974A94E1A30CB7800EAA2ED /* User.m in Sources */,
+				E974A9511A30E4DC00EAA2ED /* ShowViewController.m in Sources */,
 				E9215F781A2F76B900A3E365 /* ViewController.m in Sources */,
 				E9215F751A2F76B900A3E365 /* AppDelegate.m in Sources */,
 				E9215F721A2F76B900A3E365 /* main.m in Sources */,
@@ -412,6 +440,7 @@
 				E9215F911A2F76B900A3E365 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9215F921A2F76B900A3E365 /* Build configuration list for PBXNativeTarget "iSpend_d2Tests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +449,7 @@
 				E9215F941A2F76B900A3E365 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

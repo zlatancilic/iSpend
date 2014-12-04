@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
+#import "ShowViewController.h"
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
 
@@ -19,6 +21,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *resultLB;
 
 
+@property (weak, nonatomic) IBOutlet UITextField *ageTF;
+
+@property User *user;
 
 @end
 

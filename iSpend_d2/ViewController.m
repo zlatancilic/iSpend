@@ -26,14 +26,29 @@
 }
 
 - (IBAction)saveShowBT:(id)sender {
+    self.user = [[User alloc] init];
     
-    NSString *firstName = self.firstNameTF.text;
-    NSString *lastName = self.lastNameTF.text;
+    [self.user setUserFirstName:self.firstNameTF.text andLastName:self.lastNameTF.text andAge:[self.ageTF.text integerValue]];
+
     
-    NSString *fullName = [[NSString alloc] initWithFormat:@"%@, %@", firstName, lastName];
     
-    self.resultLB.text = fullName;
+    //self.resultLB.text = [user getFullNameAndAge];
+    [self performSegueWithIdentifier:@"showUser" sender:self];
+
+
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqual:@"showUser"])
+    {
+        ShowViewController *controller = (ShowViewController*)[segue  destinationViewController];
+        
+        [controller setNewUser:self.user];
+        //controller.showResultLB.text = [self.user getFullNameAndAge];
+    }
+}
+
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
